@@ -7,23 +7,23 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddInvestSceneAController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="383.0" minWidth="600.0" prefHeight="400.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddInvestSceneAController">
    <children>
-      <Label layoutX="32.0" layoutY="129.0" prefHeight="31.0" prefWidth="258.0" text="Tarih" />
-      <DatePicker fx:id="precMetalDate" layoutX="308.0" layoutY="129.0" prefHeight="31.0" prefWidth="258.0" />
-      <Label layoutX="32.0" layoutY="38.0" prefHeight="31.0" prefWidth="258.0" text="Alış / Satış" />
-      <ChoiceBox fx:id="isBuy" layoutX="308.0" layoutY="38.0" prefHeight="31.0" prefWidth="258.0" />
-      <Label layoutX="32.0" layoutY="175.0" prefHeight="31.0" prefWidth="258.0" text="Adet" />
-      <TextField fx:id="precMetalAmount" layoutX="308.0" layoutY="175.0" prefHeight="31.0" prefWidth="258.0" />
-      <TextField fx:id="precMetalCost" layoutX="308.0" layoutY="221.0" prefHeight="31.0" prefWidth="258.0" />
-      <Label layoutX="32.0" layoutY="221.0" prefHeight="31.0" prefWidth="258.0" text="Toplam Fiyat" />
-      <Button fx:id="addPrecMetalButton" layoutX="29.0" layoutY="309.0" mnemonicParsing="false" onAction="#addPrecMetal" prefHeight="24.0" prefWidth="129.0" text="Kayıt" />
-      <Label fx:id="precMetalSaveLabel" layoutX="179.0" layoutY="306.0" prefHeight="31.0" prefWidth="387.0" text="......" />
-      <Button fx:id="toMainButton" layoutX="29.0" layoutY="350.0" mnemonicParsing="false" onAction="#toMain" prefHeight="24.0" prefWidth="248.0" text="Geri Dön" />
-      <Button fx:id="prec2InvestsButton" layoutX="318.0" layoutY="350.0" mnemonicParsing="false" onAction="#prec2Invests" prefHeight="24.0" prefWidth="248.0" text="Yatırımlarına Git" />
-      <Label layoutX="29.0" layoutY="84.0" prefHeight="31.0" prefWidth="258.0" text="Kıymetli Maden Çeşiti" />
-      <ChoiceBox fx:id="precMetalType" layoutX="308.0" layoutY="84.0" prefHeight="31.0" prefWidth="258.0" />
-      <Label layoutX="34.0" layoutY="267.0" prefHeight="31.0" prefWidth="258.0" text="Yorum" />
-      <TextField fx:id="precComment" layoutX="308.0" layoutY="267.0" prefHeight="31.0" prefWidth="258.0" />
+      <Label layoutX="32.0" layoutY="129.0" prefHeight="31.0" prefWidth="258.0" text="Tarih" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="84.0" />
+      <DatePicker fx:id="precMetalDate" layoutX="308.0" layoutY="129.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="240.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="129.0" />
+      <Label layoutX="32.0" layoutY="38.0" minHeight="31.0" minWidth="258.0" prefHeight="31.0" prefWidth="258.0" text="Alış / Satış" AnchorPane.bottomAnchor="331.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="38.0" />
+      <ChoiceBox fx:id="isBuy" layoutX="308.0" layoutY="38.0" maxHeight="31.0" minHeight="31.0" minWidth="258.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="331.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="38.0" />
+      <Label layoutX="32.0" layoutY="175.0" prefHeight="31.0" prefWidth="258.0" text="Adet" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="129.0" />
+      <TextField fx:id="precMetalAmount" layoutX="308.0" layoutY="175.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="194.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="175.0" />
+      <TextField fx:id="precMetalCost" layoutX="308.0" layoutY="221.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="148.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="221.0" />
+      <Label layoutX="32.0" layoutY="221.0" prefHeight="31.0" prefWidth="258.0" text="Toplam Fiyat" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="221.0" />
+      <Button fx:id="addPrecMetalButton" layoutX="32.0" layoutY="309.0" mnemonicParsing="false" onAction="#addPrecMetal" prefHeight="24.0" prefWidth="129.0" text="Kayıt" AnchorPane.bottomAnchor="67.0" AnchorPane.leftAnchor="32.0" />
+      <Label fx:id="precMetalSaveLabel" layoutX="179.0" layoutY="306.0" maxHeight="31.0" minHeight="31.0" minWidth="387.0" prefHeight="31.0" prefWidth="387.0" text="......" AnchorPane.bottomAnchor="63.0" AnchorPane.leftAnchor="181.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="306.0" />
+      <Button fx:id="toMainButton" layoutX="29.0" layoutY="350.0" mnemonicParsing="false" onAction="#toMain" prefHeight="24.0" prefWidth="258.0" text="Geri Dön" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="32.0" />
+      <Button fx:id="prec2InvestsButton" layoutX="308.0" layoutY="350.0" mnemonicParsing="false" onAction="#prec2Invests" prefHeight="24.0" prefWidth="258.0" text="Yatırımlarına Git" AnchorPane.bottomAnchor="26.0" AnchorPane.rightAnchor="32.0" />
+      <Label layoutX="29.0" layoutY="175.0" prefHeight="31.0" prefWidth="258.0" text="Kıymetli Maden Çeşiti" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="175.0" />
+      <ChoiceBox fx:id="precMetalType" layoutX="308.0" layoutY="84.0" maxHeight="31.0" minHeight="31.0" minWidth="258.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="285.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="84.0" />
+      <Label layoutX="32.0" layoutY="267.0" prefHeight="31.0" prefWidth="258.0" text="Yorum" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="32.0" AnchorPane.topAnchor="267.0" />
+      <TextField fx:id="precComment" layoutX="308.0" layoutY="267.0" prefHeight="31.0" prefWidth="258.0" AnchorPane.bottomAnchor="102.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="267.0" />
    </children>
 </AnchorPane>
