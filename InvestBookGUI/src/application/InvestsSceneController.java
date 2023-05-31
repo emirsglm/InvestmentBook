@@ -25,6 +25,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import mysql.mysqlconnect;
+import mysql.insights;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -38,6 +39,15 @@ public class InvestsSceneController implements Initializable{
 	private Scene scene; 
 	private Parent root;
 	
+	//int index = -1;
+	Connection conn = null;
+	ResultSet rs = null;
+	PreparedStatement pst = null;
+	
+	double[] info = insights.getTotalInfo("invests.INVESTMENTS");
+	String totalInvestString = Double.toString(info[1]);
+	String totalIncomeString = Double.toString(info[2]);
+
 	@FXML
 	private TableView<Invest> investTable;
 	@FXML
@@ -71,6 +81,9 @@ public class InvestsSceneController implements Initializable{
 	private Button toAddInvestSceneButton;
 	@FXML
 	private Label totalInvestLabel;
+
+
+	
 	@FXML
 	private Label totalIncomeLabel;
 	
@@ -78,10 +91,7 @@ public class InvestsSceneController implements Initializable{
 	ObservableList<Invest> investData;
 	
 
-	int index = -1;
-	Connection conn =null;
-	ResultSet rs = null;
-	PreparedStatement pst = null;
+
 	
 	@Override
 	public void initialize (URL url, ResourceBundle rb) {
@@ -106,9 +116,16 @@ public class InvestsSceneController implements Initializable{
 		    return new SimpleStringProperty(comm);
 		});
 		
-		investData = mysqlconnect.getData("invests.INVESTMENTS");
+		System.out.println("initin içi");
+		investData = mysqlconnect.getInvestData("INVESTMENTS");
+		System.out.println(investData);
 
 		investTable.setItems(investData);
+		
+		totalInvestLabel.setText("toplam yatırım: "+ totalInvestString);
+		totalIncomeLabel.setText("toplam yatırım karı: " + totalIncomeString);
+		
+		
 
 	}
 	

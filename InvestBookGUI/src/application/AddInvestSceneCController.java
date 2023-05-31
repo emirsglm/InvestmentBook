@@ -53,7 +53,7 @@ public class AddInvestSceneCController implements Initializable{
 
 	@FXML
 	private ChoiceBox<String> currKind;
-	private String[] currKinds = {"altin","gümüs","platin"};
+	private String[] currKinds = {"dolar","euro"};
 	@FXML
 	private TextField currComment;
 	

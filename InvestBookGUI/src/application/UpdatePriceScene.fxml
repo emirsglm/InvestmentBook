@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="397.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UpdatePriceSceneController">
+   <children>
+      <ChoiceBox fx:id="marketType" layoutX="198.0" layoutY="30.0" prefHeight="24.0" prefWidth="157.0" />
+      <DatePicker fx:id="marketDate" layoutX="198.0" layoutY="141.0" prefHeight="24.0" prefWidth="157.0" />
+      <Button fx:id="updateButton" layoutX="40.0" layoutY="189.0" mnemonicParsing="false" onAction="#updateMarket" prefHeight="24.0" prefWidth="317.0" text="Güncelle" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="41.0" />
+      <ComboBox fx:id="marketKind" layoutX="198.0" layoutY="66.0" prefHeight="24.0" prefWidth="157.0" />
+      <Label layoutX="41.0" layoutY="30.0" prefHeight="24.0" prefWidth="157.0" text="Yatırım türü" AnchorPane.leftAnchor="41.0" />
+      <Label layoutX="41.0" layoutY="66.0" prefHeight="24.0" prefWidth="157.0" text="Yatırım çeşidi" />
+      <Label layoutX="41.0" layoutY="103.0" prefHeight="24.0" prefWidth="157.0" text="Birim fiyat" />
+      <Label layoutX="41.0" layoutY="141.0" prefHeight="24.0" prefWidth="157.0" text="Tarih" />
+      <Button fx:id="toAddInvest" layoutX="40.0" layoutY="261.0" mnemonicParsing="false" onAction="#toAddInvestScene" prefHeight="24.0" prefWidth="317.0" text="Yatırım Ekleme" />
+      <Button fx:id="toInvests" layoutX="41.0" layoutY="300.0" mnemonicParsing="false" onAction="#toInvestsScene" prefHeight="24.0" prefWidth="317.0" text="Yatırımlarımı görüntüle" />
+      <TextField fx:id="marketPrice" layoutX="200.0" layoutY="104.0" prefHeight="24.0" prefWidth="157.0" />
+      <Label fx:id="updateLabel" layoutX="41.0" layoutY="221.0" prefHeight="24.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

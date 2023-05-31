@@ -36,6 +36,16 @@ public class MainSceneController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	
+	@FXML
+	public void toUpdateScene(ActionEvent event) throws IOException {
+		root = FXMLLoader.load(getClass().getResource("UpdatePriceScene.fxml"));
+		stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+		
+		scene = new Scene(root);
+		stage.setScene(scene);
+		stage.show();
+	}
 
 }
       

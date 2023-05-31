@@ -3,9 +3,7 @@ package backEnd;
 import java.time.LocalDate;
 
 public class Invest {
-    private static int nextId = 1;
     private int id;
-
 	private boolean buy;
 	private String type;
 	private String kind ;
@@ -18,7 +16,7 @@ public class Invest {
 	private String comment;
 
 	public Invest(int id, String type, String kind, LocalDate date,double cost,double amount,boolean buy, boolean paid,boolean nonPaid, boolean bonus, String comment) {
-		this.id = nextId++;
+		this.id = id;
 		this.type = type;
 		this.kind = kind;
 		this.date = date;
