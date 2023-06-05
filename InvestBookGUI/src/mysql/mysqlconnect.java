@@ -218,7 +218,7 @@ public class mysqlconnect {
 			PreparedStatement ps3 = conn.prepareStatement("SELECT * FROM PRICES WHERE "+ "PRICE_TYPE = \"" + type + "\""+ " AND PRICE_KIND = \"" + kind + "\"" + " ORDER BY PRICE_DATE DESC LIMIT 1" );
 			//                                           SELECT * FROM PRICES WHERE PRICE_TYPE = "hisse" AND PRICE_KIND = "ereg" ORDER BY PRICE_DATE DESC
 
-			System.out.println("SELECT * FROM PRICES WHERE "+ "PRICE_TYPE = \"" + type + "\""+ " AND PRICE_KIND = \"" + kind + "\"" + " ORDER BY PRICE_DATE DESC" );
+			System.out.println("SELECT * FROM PRICES WHERE "+ "PRICE_TYPE = \"" + type + "\""+ " AND PRICE_KIND = \"" + kind + "\"" + " ORDER BY PRICE_DATE DESC LIMIT 1" );
 			ResultSet rs3 = ps3.executeQuery();
 			System.out.println(rs3);
 
